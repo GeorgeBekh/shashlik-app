@@ -1,0 +1,12 @@
+{
+  "recipes": {
+    "Шашлыки":{
+      "Говяжий шашлык":{
+        "time": 900,
+        "rotation frequency": 0.008,
+        "ingredient": "Говядина",
+        "recipe": "just roast this sheet"
+      }
+    }
+  }
+}
