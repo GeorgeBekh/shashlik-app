@@ -15,7 +15,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CookingActivity"></activity>
+        <activity android:name=".CookingActivity" />
+        <activity android:name=".TimerActivity"></activity>
     </application>
 
 </manifest>
