@@ -1,0 +1,25 @@
+{
+  "recipes": [
+    {
+      "name": "Дачный шашлык",
+      "time": 900,
+      "rotation frequency": 0.008,
+      "ingredient": "Говядина",
+      "recipe": "Жарить на открытом огне"
+    },
+    {
+      "name": "Свиной шашлык",
+      "time": 873,
+      "rotation frequency": 0.008,
+      "ingredient": "Свинина",
+      "recipe": "Жарить на открытом огне"
+    },
+    {
+      "name": "Вегетарианский шашлык",
+      "time": 911,
+      "rotation frequency": 0.008,
+      "ingredient": "Сейтан",
+      "recipe": "Жарить на открытом огне"
+    }
+  ]
+}

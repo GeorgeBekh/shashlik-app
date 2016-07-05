@@ -43,6 +43,7 @@ public class RecipeAdapter extends BaseAdapter {
         if(convertView == null){
             convertView = this.inflater.inflate(R.layout.recipe_item, parent, false);
             final  ViewHolder viewHolder = new ViewHolder();
+            viewHolder.cookingIngredient = (TextView) convertView.findViewById(R.id.cooking_ingredient);
             viewHolder.cookingTime = (TextView) convertView.findViewById(R.id.cooking_time);
             viewHolder.recipeName = (TextView) convertView.findViewById(R.id.recipe_name);
 
@@ -50,7 +51,7 @@ public class RecipeAdapter extends BaseAdapter {
         }
 
         final ViewHolder viewHolder = (ViewHolder) convertView.getTag();
-
+        viewHolder.cookingIngredient.setText(recipeItem.getIngredient());
         viewHolder.cookingTime.setText(recipeItem.getTime());
         viewHolder.recipeName.setText(recipeItem.getName());
 

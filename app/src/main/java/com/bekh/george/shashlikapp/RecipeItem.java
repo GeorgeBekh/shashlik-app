@@ -3,7 +3,7 @@ package com.bekh.george.shashlikapp;
 
 public class RecipeItem {
     private String time;
-    private Float rotationFrequency;
+    private Double rotationFrequency;
     private String recipe;
     private String ingredient;
     private String name;
@@ -24,11 +24,11 @@ public class RecipeItem {
         this.time = Integer.toString(time) + " секунд";
     }
 
-    public Float getRotationFrequency() {
+    public Double getRotationFrequency() {
         return rotationFrequency;
     }
 
-    public void setRotationFrequency(Float rotationFrequency) {
+    public void setRotationFrequency(Double rotationFrequency) {
         this.rotationFrequency = rotationFrequency;
     }
 
