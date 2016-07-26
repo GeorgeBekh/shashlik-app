@@ -15,7 +15,7 @@ public class JsonUtil {
         try {
             recipeItems = generateRecipeItemListFromJson(json);
         }catch (JSONException e){
-            Log.e(MainActivity.TAG, "Recipes file isn't valid or doesn't exist");
+            Log.e(MainActivity.TAG, "Recipes file isn't valid");
         }
         return recipeItems;
     }
@@ -36,7 +36,7 @@ public class JsonUtil {
         recipeItem.setTime(recipe.getInt("time"));
         recipeItem.setName(recipe.getString("name"));
         recipeItem.setIngredient(recipe.getString("ingredient"));
-        recipeItem.setRotationFrequency(recipe.getDouble("rotation frequency"));
+        recipeItem.setRotationPeriod(recipe.getDouble("rotation period"));
         recipeItem.setRecipe(recipe.getString("recipe"));
         return recipeItem;
     }

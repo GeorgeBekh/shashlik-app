@@ -7,9 +7,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-/**
- * Created by george on 06.07.16.
- */
 public class FileManager {
     public static String getStringFromRawFile(int fileId, Context ctx){
         InputStream inputStream = ctx.getResources().openRawResource(fileId);

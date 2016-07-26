@@ -3,23 +3,30 @@
     {
       "name": "Дачный шашлык",
       "time": 900,
-      "rotation frequency": 0.008,
+      "rotation period": 125,
       "ingredient": "Говядина",
-      "recipe": "Жарить на открытом огне"
+      "recipe": "Жарить говядину над углями"
     },
     {
       "name": "Свиной шашлык",
       "time": 873,
-      "rotation frequency": 0.008,
+      "rotation period": 125,
       "ingredient": "Свинина",
-      "recipe": "Жарить на открытом огне"
+      "recipe": "Жарить свинину над углями"
     },
     {
       "name": "Вегетарианский шашлык",
       "time": 911,
-      "rotation frequency": 0.008,
+      "rotation period": 125,
       "ingredient": "Сейтан",
-      "recipe": "Жарить на открытом огне"
+      "recipe": "Жарить satan над углями"
+    },
+    {
+      "name": "Тестовый шашлык",
+      "time": 10,
+      "rotation period": 1,
+      "ingredient": "Тестовый ингредиент",
+      "recipe": "Тестовый рецепт"
     }
   ]
 }

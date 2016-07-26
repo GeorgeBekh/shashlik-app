@@ -1,9 +1,11 @@
 package com.bekh.george.shashlikapp;
 
 
-public class RecipeItem {
-    private String time;
-    private Double rotationFrequency;
+import java.io.Serializable;
+
+public class RecipeItem implements Serializable {
+    private Integer time;
+    private Double rotationPeriod;
     private String recipe;
     private String ingredient;
     private String name;
@@ -16,20 +18,20 @@ public class RecipeItem {
         this.name = name;
     }
 
-    public String getTime() {
+    public Integer getTime() {
         return time;
     }
 
     public void setTime(Integer time) {
-        this.time = Integer.toString(time) + " секунд";
+        this.time = time;
     }
 
-    public Double getRotationFrequency() {
-        return rotationFrequency;
+    public Double getRotationPeriod() {
+        return rotationPeriod;
     }
 
-    public void setRotationFrequency(Double rotationFrequency) {
-        this.rotationFrequency = rotationFrequency;
+    public void setRotationPeriod(Double rotationPeriod) {
+        this.rotationPeriod = rotationPeriod;
     }
 
     public String getRecipe() {
@@ -56,7 +58,7 @@ public class RecipeItem {
         RecipeItem that = (RecipeItem) o;
 
         if (time != null ? !time.equals(that.time) : that.time != null) return false;
-        if (rotationFrequency != null ? !rotationFrequency.equals(that.rotationFrequency) : that.rotationFrequency != null)
+        if (rotationPeriod != null ? !rotationPeriod.equals(that.rotationPeriod) : that.rotationPeriod != null)
             return false;
         if (recipe != null ? !recipe.equals(that.recipe) : that.recipe != null) return false;
         if (ingredient != null ? !ingredient.equals(that.ingredient) : that.ingredient != null)
@@ -68,7 +70,7 @@ public class RecipeItem {
     @Override
     public int hashCode() {
         int result = time != null ? time.hashCode() : 0;
-        result = 31 * result + (rotationFrequency != null ? rotationFrequency.hashCode() : 0);
+        result = 31 * result + (rotationPeriod != null ? rotationPeriod.hashCode() : 0);
         result = 31 * result + (recipe != null ? recipe.hashCode() : 0);
         result = 31 * result + (ingredient != null ? ingredient.hashCode() : 0);
         result = 31 * result + (name != null ? name.hashCode() : 0);
