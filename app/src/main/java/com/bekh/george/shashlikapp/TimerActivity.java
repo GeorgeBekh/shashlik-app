@@ -3,6 +3,8 @@ package com.bekh.george.shashlikapp;
 import android.app.AlertDialog;
 import android.app.Notification;
 import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.content.Intent;
 import android.os.CountDownTimer;
 import android.provider.Settings;
 import android.support.v7.app.ActionBarActivity;
@@ -50,12 +52,12 @@ public class TimerActivity extends ActionBarActivity {
                 if (clicked) {
                     setCountDownTimer((int) currentTime / 1000);
                     setTimersTime(currentTime);
-                    pause.setText("Приостановить");
+                    pause.setText(R.string.button_pause);
                     clicked = false;
                     return;
                 }
                 countDownTimer.cancel();
-                pause.setText("Продолжить");
+                pause.setText(R.string.button_continue);
                 clicked = true;
             }
         });
@@ -71,7 +73,10 @@ public class TimerActivity extends ActionBarActivity {
                 setTimersTime(millisUntilFinished);
                 if (itsTimeToMakeTurn(millisUntilFinished)){
                     showAlertDialog(R.string.alertDialog_message_turn);
-                    showPushNotification("Время перевернуть шашлык");
+                    showPushNotification(
+                            getResources().
+                                    getString(R.string.alertDialog_message_turn)
+                    );
                     lastTurnTime = millsToSec(millisUntilFinished);
                 }
             }
@@ -86,8 +91,8 @@ public class TimerActivity extends ActionBarActivity {
             public void onFinish() {
                 currentTime = 0;
                 showAlertDialog(R.string.alertDialog_message_finish);
-                showPushNotification("Шашлык готов");
-                countDown.setText("Шашлык готов");
+                showPushNotification(getResources().getString(R.string.alertDialog_message_finish));
+                countDown.setText(getResources().getString(R.string.alertDialog_message_finish));
             }
         };
         countDownTimer.start();
@@ -106,7 +111,7 @@ public class TimerActivity extends ActionBarActivity {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
 
         builder.setMessage(messageId)
-                .setTitle(R.string.alertDialog_header);
+                .setTitle(R.string.alertDialog_message_header);
 
         AlertDialog dialog = builder.create();
         try {
@@ -119,15 +124,28 @@ public class TimerActivity extends ActionBarActivity {
 
     private void showPushNotification(String text){
         NotificationManager notificationManager;
+        PendingIntent pendingIntent = PendingIntent.getActivity(
+                this,
+                0,
+                new Intent(this, TimerActivity.class),
+                0
+        );
         notificationManager = (NotificationManager) getSystemService(
                 TimerActivity.NOTIFICATION_SERVICE
         );
         Notification notification = new Notification.Builder(TimerActivity.this)
-                .setContentTitle("Внимание")
+                .setContentTitle(getResources().getString(R.string.alertDialog_message_header))
                 .setContentText(text)
                 .setSmallIcon(android.R.drawable.stat_notify_more)
                 .setSound(Settings.System.DEFAULT_NOTIFICATION_URI)
+                .setContentIntent(pendingIntent)
                 .build();
         notificationManager.notify(0, notification);
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        this.countDownTimer.cancel();
     }
 }

@@ -7,23 +7,23 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.bekh.george.shashlikapp.MainActivity">
+    tools:context=".AboutActivity">
 
-    <Button
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/start_cooking"
-        android:id="@+id/start_cooking"
-        android:layout_marginTop="165dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/about_text"
+        android:id="@+id/textView"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/about"
-        android:id="@+id/about_button"
-        android:layout_marginTop="49dp"
-        android:layout_below="@+id/start_cooking"
-        android:layout_centerHorizontal="true" />
+        android:text="See this project on GitHub"
+        android:id="@+id/button"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="117dp" />
 </RelativeLayout>

@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">ShashlikApp</string>
+    <string name="start_cooking">Start cooking</string>
+    <string name="alertDialog_message_finish">Your kebab is ready!</string>
+    <string name="alertDialog_message_turn">It is time to rotate the kebab</string>
+    <string name="alertDialog_message_header">Attention!</string>
+    <string name="button_pause">Pause</string>
+    <string name="button_continue">Continue</string>
+    <string name="about">About</string>
+    <string name="title_activity_about">About</string>
+    <string name="about_text">OpenSource project\nMade by georgebekh@mail.ru</string>
+    <string name="GitHub_link">https://github.com/GeorgeBekh/shashlik-app</string>
 </resources>

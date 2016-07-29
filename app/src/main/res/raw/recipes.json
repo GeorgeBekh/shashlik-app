@@ -1,32 +1,25 @@
 {
   "recipes": [
     {
-      "name": "Дачный шашлык",
+      "name": "Country kebab",
       "time": 900,
       "rotation period": 125,
-      "ingredient": "Говядина",
-      "recipe": "Жарить говядину над углями"
+      "ingredient": "Beef",
+      "recipe": "INGREDIENTS\n\nMarinade Ingredients:\n\n1/3 cup olive oil\n\n1/3 cup soy sauce\n\n3 Tbsp red wine vinegar\n\n1/4 cup honey\n\n2 cloves garlic, minced\n\n1 Tbsp minced fresh ginger\n\nFreshly ground black pepper to taste\n\nKebab Ingredients:\n\n1 1/2 lbs top sirloin steak, cut into 1 1/2-inch cubes\n\n1 large bell pepper\n\n1-2 medium red onions\n\n1/2 to a pound button mushrooms\n\nAbout 20 bamboo or wooden skewers\n\n\n\n1 Mix the marinade ingredients together in a bowl and add the meat. Cover and chill in the fridge for at least 30 minutes, preferably several hours or even overnight. (Heck, I've kept the meat marinating for a couple days, still great.)\n\n\n\n2 Soak the skewers in water for at least 30 minutes before grilling. This will help prevent them from completely burning up on the grill.\n\n\n\n3 Cut the vegetables into chunks roughly the width of the beef pieces. Taking care not to poke yourself, thread the meat and vegetables onto double bamboo skewers. One way to do this safely is to put the piece that you are trying to pierce on a cutting board, and then push the skewers through the piece to the board. Using double skewers will help you turn the kebabs on the grill. If you keep a little space between the pieces, they will grill more evenly. Paint the kebabs with some of the remaining marinade.\n\n\n\n3 Prepare your grill for high, direct heat. Grill for 8 to 10 minutes, depending on how hot your grill is, and how done you would like your meat, turning occasionally. Let rest for 5 minutes before serving.\n\n"
     },
     {
-      "name": "Свиной шашлык",
-      "time": 873,
+      "name": "Pork kebab",
+      "time": 900,
       "rotation period": 125,
-      "ingredient": "Свинина",
-      "recipe": "Жарить свинину над углями"
+      "ingredient": "Pork",
+      "recipe": "1 In a shallow dish, mix together 3 tablespoons soy sauce, olive oil, 1 clove minced garlic, red pepper flakes, salt, and pepper. Add pork cubes, and turn to coat evenly with marinade. Cover, and refrigerate for 3 hours.\n\n\n\n2 In a saucepan, combine beef broth, cornstarch, 2 tablespoons soy sauce, brown sugar, 2 cloves minced garlic, and ginger. Bring to a boil, stirring constantly. Reduce heat, and simmer 5 minutes.\n\n\n\n3 Preheat an outdoor grill for high heat and lightly oil grate. Thread pork cubes onto skewers, alternating with mushrooms, onion, tomatoes, and pineapple chunks.\n\n\n\n4 Cook on grill for 15 minutes, or until meat is cooked through. Turn skewers, and baste often with sauce during cooking."
     },
     {
-      "name": "Вегетарианский шашлык",
-      "time": 911,
+      "name": "Vegetarian kebab",
+      "time": 900,
       "rotation period": 125,
-      "ingredient": "Сейтан",
-      "recipe": "Жарить satan над углями"
-    },
-    {
-      "name": "Тестовый шашлык",
-      "time": 10,
-      "rotation period": 1,
-      "ingredient": "Тестовый ингредиент",
-      "recipe": "Тестовый рецепт"
+      "ingredient": "Seitan",
+      "recipe": "Marinade:\n\n1 medium onion, thinly sliced\n\n1/3 cup (80 mL) extra-virgin olive oil\n\n2 Tbsp (30 mL) lemon juice\n\n1 Tbsp (15 mL) low-sodium soy sauce\n\n1 Tbsp (15 mL) minced garlic\n\n1 Tbsp (15 mL) paprika\n\n2 tsp (10 mL) dried mint\n\n2 tsp (10 mL) ground cumin\n\n1 tsp (5 mL) dried thyme leaves\n\n1/2 tsp (2 mL) dried red chili pepper flakes\n\n12 oz (340 g) seitan, cut into 32 chunks\n\n8 bamboo skewers\n\n1 large bell pepper, seeded and cut into 1 in (2.5 cm) squares\n\n1 medium zucchini, cut into 1 in (2.5 cm) chunks\n\n8 medium white button or crimini mushrooms\n\nCombine marinade ingredients and mix with seitan chunks in shallow container with lid. Refrigerate for at least 4 hours, shaking container every so often.\n\nWhen ready to cook, soak bamboo skewers in water for 15 minutes.\n\n\n\nThread a square of bell pepper, 2 marinated seitan chunks, a mushroom, 2 more seitan chunks, then a chunk of zucchini, on each skewer. Repeat until all seitan is used up, adding any extra vegetables to skewers.\n\n\n\nGrill kebabs on barbecue, on open indoor grill, or under broiler (place skewers on cookie sheet 3 to 4 in/6 to 8 cm below heat source). Grill or broil until they start to char a bit, turning and basting with marinade several times. Serve hot on bed of steamed rice.\n\n\n\nServes 4.\n\n\n\nEach serving contains: 205 calories; 18 g protein; 9 g total fat (1 g sat. fat, 0 trans fat); 17 g carbohydrates; 3 g fibre; 249 mg sodium"
     }
   ]
 }
